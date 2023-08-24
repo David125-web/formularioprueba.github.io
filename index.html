@@ -11,57 +11,63 @@
 <body>
     <div class="div-principal">
         <main>
-            <h1>Registration Form</h1>
-            <p>Please fill out this form with the required information</p>
+            <form action="#">
+                <h1>Registration Form</h1>
+                <p>Please fill out this form with the required information</p>
 
-            <!-- <label>Enter Your First Name:</label>
-            <input type="text">
-            <label>Enter Your Last Name:</label>
-            <input type="text">
-            <label>Enter Your Email:</label>
-            <input type="text">
-            <label>Create a New Password:</label>
-            <input type="text">
+                <section class="seccion-datos">
+                    <label class="label-seccion">Enter Your First Name:</label>
+                    <input class="input-seccion" type="text" required>
+                    <label class="label-seccion">Enter Your Last Name:</label>
+                    <input class="input-seccion" type="text" required>
+                    <label class="label-seccion">Enter Your Email:</label>
+                    <input class="input-seccion" type="text" required>
+                    <label class="label-seccion">Create a New Password:</label>
+                    <input class="input-seccion" type="text" required>
+                </section>
+                <hr>
+                <section class="seccion-datos">
+                    <div>
+                        <label class="label-seccion" for="personal">
+                            <input id="personal" type="radio" name="personal-business">
+                            Personal Account
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label-seccion" for="business">
+                            <input id=business"" type="radio" name="personal-business">
+                            Business Account
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label-seccion" for="">
+                            <input type="checkbox">
+                            I accept the
+                            <a href="#" target="_blank">terms and conditions</a>
+                        </label>
+                    </div>
+                </section>
+                <hr>
 
-            <hr>
-
-            <label for="">
-                <input type="radio">
-                Personal Account
-            </label>
-            <label for="">
-                <input type="radio">
-                Business Account
-            </label>
-            <label for="">
-                <input type="radio">
-                I accept the
-                <a href="#" target="_blank">terms and conditions</a>
-            </label>
-            <hr>
-
-            <label>Upload a profile picture:
-                <button>Seleccionar archivo</button>
-                <input type="text" readonly value="Ningun archivo selec.">
-            </label>
-            <label>Input your age (years):
-                <input type="number">
-            </label>
-            <label for="dropdownSelect">How did you hear about us?
-                <select id="dropdownSelect" name="dropdownSelect">
-                    <option value="selectone">(select one)</option>
-                    <option value="news">freeCodeCamp News</option>
-                    <option value="channel">freeCodeCamp Youtube channel</option>
-                    <option value="forum">freeCodeCamp Forum</option>
-                    <option value="other">other</option>
-                </select>
-            </label>
-            <label>
-                Provide a bio:
-                <textarea placeholder="I like coding on the beach.."></textarea>
-            </label>
-
-            <button id="bottonSubmit">Submit</button>-->
+                <section class="seccion-datos">
+                    <label class="label-seccion1">Upload a profile picture:
+                        <input class="input-seccion" type="file" readonly placeholder="Ningun archivo selec.">
+                    </label>
+                    <label class="label-seccion">Input your age (years):</label>
+                    <input class="input-seccion" type="number">
+                    <label class="label-seccion" for="dropdownSelect">How did you hear about us?</label>
+                    <select class="input-seccion" id="dropdownSelect" name="dropdownSelect">
+                        <option value="selectone">(select one)</option>
+                        <option value="news">freeCodeCamp News</option>
+                        <option value="channel">freeCodeCamp Youtube channel</option>
+                        <option value="forum">freeCodeCamp Forum</option>
+                        <option value="other">other</option>
+                    </select>
+                    <label class="label-seccion">Provide a bio:</label>
+                    <textarea class="input-seccion" placeholder="I like coding on the beach.."></textarea>
+                </section>
+                <button id="bottonSubmit">Submit</button>
+            </form>
         </main>
     </div>
 </body>
